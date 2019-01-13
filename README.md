@@ -6,6 +6,6 @@ Either pass the id of an individual video with flag `--id <id>` or of a channel 
 
 Also please don't abuse my youtube api key :p
 
-If you want to help with development please join the discord https://discord.gg/Be2W5F6
+If you want to help with development please join the discord https://discord.gg/54R7Rr6
 
 Thanks all! 😊
