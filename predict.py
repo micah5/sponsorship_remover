@@ -100,7 +100,7 @@ def predict_channel(channel_id, tokenizer, model, verbose=False):
     search_response = requests.request("GET", "https://www.googleapis.com/youtube/v3/search", params = {
         "part": "snippet",
         "channelId": channel_id,
-        "key": "AIzaSyAdzKTPhFCdREORoD1NHB4y2t-nMDj_9sk",
+        "key": "",
         "maxResults": "10",
         "order": "date"
         })
