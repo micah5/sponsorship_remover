@@ -14,6 +14,8 @@
 
 `$ pip3 install -r requirements.txt`
 
+`$ python predict.py`
+
 `$ source <desired-path>/bin/activate`
 
 `$ deactivate`
