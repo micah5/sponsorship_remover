@@ -5,9 +5,10 @@
 ### Pip 3
 
 ## Installation Instructions:
-`$ pip3 install -r requirements.txt`
 
 `$ virtualenv -p python3 <desired-path>`
+
+`$ pip3 install -r requirements.txt`
 
 `$ source <desired-path>/bin/activate`
 
