@@ -6,6 +6,10 @@
 
 ## Installation Instructions:
 
+`$ git clone https://github.com/98mprice/sponsorship_remover.git`
+
+`$ cd /path/to/sponsorship_remover`
+
 `$ virtualenv -p python3 <desired-path>`
 
 `$ pip3 install -r requirements.txt`
