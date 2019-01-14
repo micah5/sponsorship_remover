@@ -4,7 +4,7 @@
 ### Python 3.6
 ### Pip 3
 
-Installation Instructions:
+## Installation Instructions:
 `$ pip3 install -r requirements.txt`
 
 `$ virtualenv -p python3 <desired-path>`
