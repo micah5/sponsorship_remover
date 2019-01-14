@@ -2,7 +2,7 @@
 
 # Requirements:
 ### Python 3.6
-### gPip 3
+### Pip 3
 
 Installation Instructions:
 `$ pip3 install -r requirements.txt`
