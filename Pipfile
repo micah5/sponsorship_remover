@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+requests = "*"
+youtube-transcript-api = "*"
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+keras = "*"
+tensorflow = "*"
+
+[requires]
+python_version = "3.6"
+
