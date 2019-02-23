@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Avenir LT Std 35 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Std 35 Light'), url('AvenirLTStd-Light.woff') format('woff');
+}
+
+body {
+  overflow: hidden;
+  width: 250px;
+  min-height: 300px;
+  font-family: 'Avenir LT Std 35 Light';
+  margin: 1em;
+}
+#app {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5em;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.main {
+  padding: 0.5rem;
+}
+
+button {
+  background-color: #125BD9;
+  transition: 0.2s linear all;
+  border: none;
+  color: white;
+  padding: 0.3rem 2rem 0.3rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2em;
+}
+button:hover {
+  background-color: #E94153;
+}
+button:focus {
+  outline:none;
+}
+button:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+#loading {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #000000;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  margin: 1em;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+
+.list-row {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.list-row:first-of-type {
+  padding-top: 0;
+}
+
+.list-row > button {
+  position: absolute;
+  right: 0;
+  bottom: 0.5em;
+}

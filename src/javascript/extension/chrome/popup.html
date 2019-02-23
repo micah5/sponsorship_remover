@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sponsorship Remover Prototype</title>
+    <link rel="stylesheet" href="style/popup.css">
+  </head>
+  <div id="app">
+    <div class="main">
+      <h3>🚀 Sponsorship Remover Prototype</h3>
+      <div v-if="loadingModel">
+        <div id="loading"></div>
+        <h4>Preparing...</h4>
+        <div>The model only needs to be prepared once per session,
+          so you won't have to wait for this on the next video
+        </div>
+      </div>
+      <button v-else-if="!on" @click="prepareModel">
+        💡 prepare model
+      </button>
+      <div v-else>
+        <h4>Current video id: {{id}}</h4>
+        <button v-if="!loadingPrediction" @click="startPrediction">
+          {{predictionPretty.length > 0 ? 'predict again' : 'start'}}
+        </button>
+        <div v-else>
+          <div id="loading"></div>
+          <h4>Predicting...</h4>
+        </div>
+        <div v-if="predictionPretty.length > 0 && oldVideoId == id">
+          <button @click="toggleBlocker()">
+            turn {{blocking ? 'off' : 'on'}} blocker
+          </button>
+          <h4>Sponsored Sections</h4>
+          <div v-for="pred in predictionPretty" class="list-row">
+            {{display(pred.startTime)}} - {{display(pred.endTime)}}
+            <button @click="goTo(pred.startTime)">go</button>
+          </div>
+        </div>
+        </br>
+        <!--
+          <button @click="openLink('https://github.com/98mprice/sponsorship_remover')">github</button>
+          <button @click="openLink('https://discord.gg/54R7Rr6')">discord</button>
+        -->
+      </div>
+    </div>
+  </div>
+  <script src="js/libs/axios.min.js"></script>
+  <script src="js/libs/vue.js"></script>
+  <script src="js/popup.js"></script>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "sponsorship-remover",
+  "version": "1.0.0",
+  "description": "adblock for in-video sponsorships",
+  "main": "predict.js",
+  "scripts": {
+    "test": "node predict.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micah5/sponsorship_remover_private.git"
+  },
+  "author": "Micah Price",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micah5/sponsorship_remover_private/issues"
+  },
+  "homepage": "https://github.com/micah5/sponsorship_remover_private#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.15.0",
+    "@tensorflow/tfjs-node": "^0.2.3",
+    "jquery": "^3.3.1",
+    "node-fetch": "^2.3.0",
+    "numjs": "^0.16.0",
+    "progress": "^2.0.3"
+  }
+}
